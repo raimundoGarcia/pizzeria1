@@ -24,39 +24,39 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ToggleButton fx:id="tFamiliar" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Familiar" GridPane.columnIndex="5" GridPane.rowIndex="3">
+            <ToggleButton fx:id="tFamiliar" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Familiar" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <toggleGroup>
                   <ToggleGroup fx:id="tamaño" />
                </toggleGroup></ToggleButton>
             <ToggleButton fx:id="iAceitunas" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Aceitunas" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <ToggleButton fx:id="iTomate" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="tomateNatural" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <ToggleButton fx:id="p4estaciones" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizza4estaciones" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <ToggleButton fx:id="p4estaciones" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizza4estaciones" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <toggleGroup>
                   <ToggleGroup fx:id="pizza" />
                </toggleGroup></ToggleButton>
-            <ToggleButton fx:id="pCuatroQuesos" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaCuatroQuesos" toggleGroup="$pizza" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <ToggleButton fx:id="mRellena" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaRellena" GridPane.rowIndex="3">
+            <ToggleButton fx:id="pCuatroQuesos" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaCuatroQuesos" toggleGroup="$pizza" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="tMediana" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Mediana" toggleGroup="$tamaño" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="iBBQ" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="SalsaBBQ" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="pEmpresa" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaEmpresa" toggleGroup="$pizza" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="pBBQ" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaBBQ" toggleGroup="$pizza" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="tPequeña" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Pequeña" toggleGroup="$tamaño" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="iQueso" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Queso" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="tInfantil" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Infantil" toggleGroup="$tamaño" GridPane.columnIndex="3" />
+            <ToggleButton fx:id="iJamon" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Jamon" GridPane.columnIndex="4" />
+            <ToggleButton fx:id="pMarinera" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaMarinera" toggleGroup="$pizza" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="pProscuto" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaProscuto" toggleGroup="$pizza" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="pBoloñesa" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaBoloñesa" toggleGroup="$pizza" GridPane.columnIndex="1" />
+            <ToggleButton fx:id="mFina" layoutX="122.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaFina" GridPane.columnIndex="2">
                <toggleGroup>
                   <ToggleGroup fx:id="masa" />
                </toggleGroup></ToggleButton>
-            <ToggleButton fx:id="tMediana" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Mediana" toggleGroup="$tamaño" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <ToggleButton fx:id="iBBQ" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="SalsaBBQ" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <ToggleButton fx:id="iPolla" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pollo" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <ToggleButton fx:id="pEmpresa" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaEmpresa" toggleGroup="$pizza" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <ToggleButton fx:id="pBBQ" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaBBQ" toggleGroup="$pizza" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <ToggleButton fx:id="mIntegral" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaintegral" toggleGroup="$masa" GridPane.rowIndex="2" />
-            <ToggleButton fx:id="tPequeña" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Pequeña" toggleGroup="$tamaño" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <ToggleButton fx:id="iQueso" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Queso" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <ToggleButton fx:id="tInfantil" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Infantil" toggleGroup="$tamaño" GridPane.columnIndex="5" />
-            <ToggleButton fx:id="iJamon" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Jamon" GridPane.columnIndex="4" />
-            <ToggleButton fx:id="iCarnePicada" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="carnePicada" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <ToggleButton fx:id="iCebolla" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="cebolla" GridPane.columnIndex="3" />
-            <ToggleButton fx:id="pMarinera" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaMarinera" toggleGroup="$pizza" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <ToggleButton fx:id="pProscuto" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaProscuto" toggleGroup="$pizza" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <ToggleButton fx:id="mNormal" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaNormal" toggleGroup="$masa" GridPane.rowIndex="1" />
-            <ToggleButton fx:id="pBoloñesa" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaBoloñesa" toggleGroup="$pizza" GridPane.columnIndex="2" />
-            <ToggleButton fx:id="pMargarita" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaMargarita" toggleGroup="$pizza" GridPane.columnIndex="1" />
-            <ToggleButton fx:id="mFina" layoutX="122.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaFina" toggleGroup="$masa" />
+            <ToggleButton fx:id="pMargarita" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaMargarita" toggleGroup="$pizza" />
+            <ToggleButton fx:id="mNormal" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaNormal" toggleGroup="$masa" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="mIntegral" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaintegral" toggleGroup="$masa" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="mRellena" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaRellena" toggleGroup="$masa" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="iCebolla" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="cebolla" GridPane.columnIndex="5" />
+            <ToggleButton fx:id="iCarnePicada" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="carnePicada" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="iPolla" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pollo" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="iTomate" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="tomateNatural" GridPane.columnIndex="5" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </children>
