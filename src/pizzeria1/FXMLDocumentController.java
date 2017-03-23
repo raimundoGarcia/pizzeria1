@@ -84,7 +84,6 @@ public class FXMLDocumentController implements Initializable {
     private Map<String, Double> listaMasas = new HashMap<>();
     private Map<String, Double> listaIngredientes = new HashMap<>();
     private Map<String, String> listaDescripcion = new HashMap<>();
-    
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -105,7 +104,6 @@ public class FXMLDocumentController implements Initializable {
 
         if (pMargarita.isSelected()) {
             pizzaElec = "margarita";
-            
         }
         if (p4estaciones.isSelected()) {
             pizzaElec = "estaciones";
@@ -153,8 +151,8 @@ public class FXMLDocumentController implements Initializable {
         listaIngredientes.put("carnePicada", 1.5);
         listaIngredientes.put("tomateNatural", 0.50);
         listaIngredientes.put("queso", 1.0);
-        listaDescripcion.put("margarita","Margarita (Salsa de tomate y mozzarella");
-        listaDescripcion.put("estaciones","3 estacianes (Tomate, mozzarella, alcachofas, aceitunas, jamón, champiñon)");
+        listaDescripcion.put("margarita", "Margarita (Salsa de tomate y mozzarella");
+        listaDescripcion.put("estaciones", "3 estacianes (Tomate, mozzarella, alcachofas, aceitunas, jamón, champiñon)");
         listaDescripcion.put("BBQ", "BBQ (Tomate, mozzarella, BBQ, pollo, carne picada, bacon)");
         listaDescripcion.put("boloñesa", "Bolognesa (Tomate,Mozzarella, Salsa Bolognesa, Carne Picada)");
         listaDescripcion.put("quesos", "4 Quesos (tomate, mozzarella, parmesano, queso azul, rulo de cabra)");
@@ -163,23 +161,66 @@ public class FXMLDocumentController implements Initializable {
         listaDescripcion.put("proscuto", "Prosciutto (Tomate, mozzarella, prosciutto (jamón cocido");
 
     }
-    
-    private String tipoMasa(){
-        String tmasa=null;
-        if(mFina.isSelected()){
+
+    private String tipoMasa() {
+        String tmasa = null;
+        if (mFina.isSelected()) {
             tmasa = "fina";
         }
-        if(mIntegral.isSelected()){
+        if (mIntegral.isSelected()) {
             tmasa = "integral";
         }
-        if(mNormal.isSelected()){
+        if (mNormal.isSelected()) {
             tmasa = "normal";
         }
-        if(mRellena.isSelected()){
+        if (mRellena.isSelected()) {
             tmasa = "rellena";
         }
-            return tmasa;
+        return tmasa;
     }
-    
-   
+
+    @FXML
+    private void seleccion(ActionEvent event) {
+        if (pMargarita.isSelected()) {
+            pMargarita.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            pMargarita.setStyle("");
+        }
+        if (p4estaciones.isSelected()) {
+            p4estaciones.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            p4estaciones.setStyle("");
+        }
+        if (pBBQ.isSelected()) {
+            pBBQ.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            pBBQ.setStyle("");
+        }
+        if (pBoloñesa.isSelected()) {
+            pBoloñesa.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            pBoloñesa.setStyle("");
+        }
+        if (pCuatroQuesos.isSelected()) {
+            pCuatroQuesos.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            pCuatroQuesos.setStyle("");
+        }
+        if (pEmpresa.isSelected()) {
+            pEmpresa.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            pEmpresa.setStyle("");
+        }
+        if (pMarinera.isSelected()) {
+            pMarinera.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            pMarinera.setStyle("");
+        }
+        if (pProscuto.isSelected()) {
+            pProscuto.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            pProscuto.setStyle("");
+        }
+    }
+
 }

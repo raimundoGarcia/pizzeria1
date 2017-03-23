@@ -83,3 +83,7 @@
 .mFina{
     -fx-background-image: url("\fina.jpg");
 }
+select{
+     -fx-border-width:3px;
+    -fx-border-color:red;
+}
