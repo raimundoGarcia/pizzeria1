@@ -1,0 +1,85 @@
+
+.pMargarita{
+    -fx-background-image: url("\margarita.jpg");
+}
+
+.tFamiliar{
+    -fx-background-image: url("\tamaño.jpg");
+}
+
+.iAceitunas{
+    -fx-background-image: url("\aceituna.jpg");
+}
+
+.iTomate{
+    -fx-background-image: url("\tomate.jpg");
+}
+
+.p4estaciones{
+    -fx-background-image: url("\4estaciones.jpg");
+}
+
+.pCuatroQuesos{
+    -fx-background-image: url("\4quesos.jpg");
+}
+
+.mRellena{
+    -fx-background-image: url("\rellena.jpg");
+}
+
+.tMediana{
+    -fx-background-image: url("\tamaño.jpg");
+}
+
+.iBBQ{
+    -fx-background-image: url("\SalsaBBQ.jpg");
+}
+
+.iPollo{
+    -fx-background-image: url("\pollo.jpg");
+}
+
+.pEmpresa{
+    -fx-background-image: url("\fatore.jpg");
+}
+
+.pBBQ{
+    -fx-background-image: url("\BBQ.jpg");
+}
+
+.mIntegral{
+    -fx-background-image: url("\integral.jpg");
+}
+.tPequeña{
+    -fx-background-image: url("\tamaño.jpg");
+}
+.iQueso{
+    -fx-background-image: url("\queso.JPG");
+}
+.tInfantil{
+    -fx-background-image: url("\tamaño.jpg");
+}
+.iJamon{
+    -fx-background-image: url("\jamon.jpg");
+}
+.iCarnePicada{
+    -fx-background-image: url("\carnePicada.jpg");
+}
+.iCebolla{
+    -fx-background-image: url("\cebolla.jpg");
+}
+.pMarinera{
+    -fx-background-image: url("\marinera.jpg");
+}
+.pProscuto{
+    -fx-background-image: url("\proscuto.jpg");
+}
+.mNormal{
+    -fx-background-image: url("\normal.jpg");
+}
+.pBolognesa{
+    -fx-background-image: url("\bolognesa.jpg");
+}
+.mFina{
+    -fx-background-image: url("\fina.jpg");
+}
