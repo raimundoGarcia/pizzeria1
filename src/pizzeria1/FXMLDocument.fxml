@@ -6,27 +6,50 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
-  <tabs>
-    <Tab text="Untitled Tab 2">
-      <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-      </content>
-    </Tab>
-    <Tab text="Untitled Tab 1">
-      <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-      </content>
-    </Tab>
-      <Tab text="Untitled Tab 1">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-         </content>
-      </Tab>
-      <Tab text="Untitled Tab 1">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-         </content>
-      </Tab>
-  </tabs>
-</TabPane>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="67.0" layoutY="82.0" prefHeight="205.0" prefWidth="667.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ToggleButton mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Familiar" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Aceitunas" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="tomateNatural" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizza4estaciones" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaCuatroQuesos" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaRellena" GridPane.rowIndex="3" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Mediana" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="SalsaBBQ" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pollo" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaEmpresa" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaBBQ" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaintegral" GridPane.rowIndex="2" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Pequeña" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Queso" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Infantil" GridPane.columnIndex="5" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="Jamon" GridPane.columnIndex="4" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="carnePicada" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="cebolla" GridPane.columnIndex="3" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaMarinera" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaProscuto" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaNormal" GridPane.rowIndex="1" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaBoloñesa" GridPane.columnIndex="2" />
+            <ToggleButton layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="pizzaMargarita" GridPane.columnIndex="1" />
+            <ToggleButton layoutX="122.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="112.0" text="masaFina" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
