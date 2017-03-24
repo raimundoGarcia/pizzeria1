@@ -84,6 +84,13 @@ public class FXMLDocumentController implements Initializable {
     private Map<String, Double> listaMasas = new HashMap<>();
     private Map<String, Double> listaIngredientes = new HashMap<>();
     private Map<String, String> listaDescripcion = new HashMap<>();
+    private Map<String, Double> listaTamaños = new HashMap<>();
+    @FXML
+    private Label precioPizza;
+    @FXML
+    private Label precioMasa;
+    @FXML
+    private Label precioTamaño;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -96,7 +103,12 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void calcular(ActionEvent event) {
-        tipoPizza();
+        textPizza.setText(listaDescripcion.get(tipoPizza()));
+        textTamaño.setText("Tamaño " + tipoTamaño());
+        textMasa.setText("Masa tipo " + tipoMasa());
+        precioPizza.setText(String.valueOf(listaPizzas.get(tipoPizza())));
+        precioMasa.setText(String.valueOf(listaMasas.get(tipoMasa())));
+        precioTamaño.setText(String.valueOf(listaTamaños.get(tipoTamaño())));
     }
 
     private String tipoPizza() {
@@ -129,6 +141,7 @@ public class FXMLDocumentController implements Initializable {
 
         return pizzaElec;
     }
+    
 
     private void cargarListas() {
         listaPizzas.put("margarita", 5.85);
@@ -151,14 +164,18 @@ public class FXMLDocumentController implements Initializable {
         listaIngredientes.put("carnePicada", 1.5);
         listaIngredientes.put("tomateNatural", 0.50);
         listaIngredientes.put("queso", 1.0);
-        listaDescripcion.put("margarita", "Margarita (Salsa de tomate y mozzarella");
-        listaDescripcion.put("estaciones", "3 estacianes (Tomate, mozzarella, alcachofas, aceitunas, jamón, champiñon)");
+        listaDescripcion.put("margarita", "Margarita (Salsa de tomate y mozzarella)");
+        listaDescripcion.put("estaciones", "3 Estaciones (Tomate, mozzarella, alcachofas, aceitunas, jamón, champiñon)");
         listaDescripcion.put("BBQ", "BBQ (Tomate, mozzarella, BBQ, pollo, carne picada, bacon)");
         listaDescripcion.put("boloñesa", "Bolognesa (Tomate,Mozzarella, Salsa Bolognesa, Carne Picada)");
         listaDescripcion.put("quesos", "4 Quesos (tomate, mozzarella, parmesano, queso azul, rulo de cabra)");
         listaDescripcion.put("empresa", "Fattore (Tomate, mozzarella, jamón serrano, mozzarella di buffala, rucula)");
         listaDescripcion.put("marinera", "Marinera (Salsa marinera, mozzarella, mejillones, gambas, calamares)");
         listaDescripcion.put("proscuto", "Prosciutto (Tomate, mozzarella, prosciutto (jamón cocido");
+        listaTamaños.put("infantil",0.5);
+        listaTamaños.put("pequeña",1.0);
+        listaTamaños.put("mediana",1.25);
+        listaTamaños.put("familiar",1.5);
 
     }
 
@@ -178,9 +195,33 @@ public class FXMLDocumentController implements Initializable {
         }
         return tmasa;
     }
+    private String tipoTamaño(){
+        String tTamaño = null;
+        if(tFamiliar.isSelected()){
+            tTamaño="familiar";
+        }
+        if(tMediana.isSelected()){
+            tTamaño="mediana";
+        }
+        if(tInfantil.isSelected()){
+            tTamaño="infantil";
+        }
+        if(tPequeña.isSelected()){
+            tTamaño="pequeña";
+        }
+        return tTamaño;
+    }
+     
 
     @FXML
     private void seleccion(ActionEvent event) {
+        bordePizza();
+        bordeIngredientes();
+        bordeMasa();
+        bordeTamaño();
+    }
+
+    private void bordePizza() {
         if (pMargarita.isSelected()) {
             pMargarita.setStyle("-fx-border-width:3px;-fx-border-color:red;");
         } else {
@@ -223,4 +264,95 @@ public class FXMLDocumentController implements Initializable {
         }
     }
 
+    private void bordeMasa() {
+
+        if (mFina.isSelected()) {
+            mFina.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            mFina.setStyle("");
+        }
+        if (mNormal.isSelected()) {
+            mNormal.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            mNormal.setStyle("");
+        }
+        if (mIntegral.isSelected()) {
+            mIntegral.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            mIntegral.setStyle("");
+        }
+        if (mRellena.isSelected()) {
+            mRellena.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            mRellena.setStyle("");
+        }
+    }
+
+    private void bordeIngredientes() {
+        
+        if (iAceitunas.isSelected()) {
+            iAceitunas.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            iAceitunas.setStyle("");
+        }
+        if (iBBQ.isSelected()) {
+            iBBQ.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            iBBQ.setStyle("");
+        }
+        if (iCarnePicada.isSelected()) {
+            iCarnePicada.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            iCarnePicada.setStyle("");
+        }
+        if (iCebolla.isSelected()) {
+            iCebolla.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            iCebolla.setStyle("");
+        }
+        if (iJamon.isSelected()) {
+            iJamon.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            iJamon.setStyle("");
+        }
+        if (iPollo.isSelected()) {
+            iPollo.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            iPollo.setStyle("");
+        }
+        if (iQueso.isSelected()) {
+            iQueso.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            iQueso.setStyle("");
+        }
+        if (iTomate.isSelected()) {
+            iTomate.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            iTomate.setStyle("");
+        }
+
+    }
+    private void bordeTamaño(){
+      
+         if (tFamiliar.isSelected()) {
+            tFamiliar.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            tFamiliar.setStyle("");
+        }
+          if (tMediana.isSelected()) {
+            tMediana.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            tMediana.setStyle("");
+        }
+           if (tPequeña.isSelected()) {
+            tPequeña.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            tPequeña.setStyle("");
+        }
+            if (tInfantil.isSelected()) {
+            tInfantil.setStyle("-fx-border-width:3px;-fx-border-color:red;");
+        } else {
+            tInfantil.setStyle("");
+        }
+    }
 }
