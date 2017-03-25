@@ -3,7 +3,6 @@ package pizzeria1;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -488,7 +487,7 @@ public class FXMLDocumentController implements Initializable {
     }
 
     private void calculoPrecioPizza() {
-        DecimalFormat df=new DecimalFormat("00.00");
+        DecimalFormat df=new DecimalFormat("0.00");
         double totalfinal;
         String formateado;
         if (tipoMasa() == null && tipoPizza() == null) {
